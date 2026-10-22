@@ -6,6 +6,7 @@
       "id": "agent2api-providers",
       "name": "提供商增强",
       "description": "各家提供商的转发、账号、签到与余额实现。装好之后这些提供商才会出现在「添加提供商」里。",
+      "icon": "icons/agent2api-providers.png",
       "source": {
         "type": "github-release",
         "repo": "ProvidersPlugin/Agent2Providers"
@@ -13,18 +14,6 @@
       "manifest": "plugins/agent2api-providers.json",
       "official": true,
       "tags": ["official", "providers"]
-    },
-    {
-      "id": "agent2plugin-demo",
-      "name": "示例插件",
-      "description": "一个最小可运行的插件，演示如何实现 Provider trait 并打包分发。适合作为自己写插件的起点。",
-      "source": {
-        "type": "github-release",
-        "repo": "Agent2plugin/Agent2plugin"
-      },
-      "manifest": "plugins/agent2plugin-demo.json",
-      "official": true,
-      "tags": ["example", "tutorial"]
     }
   ]
 }

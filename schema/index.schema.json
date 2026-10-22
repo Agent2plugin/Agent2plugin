@@ -35,6 +35,11 @@
             "pattern": "^plugins/[a-z0-9][a-z0-9-]*\\.json$",
             "description": "明细文件路径"
           },
+          "icon": {
+            "type": "string",
+            "pattern": "^icons/[a-z0-9][a-z0-9-]*\\.(png|webp|jpg|jpeg|svg)$",
+            "description": "商店卡片的图标路径（相对仓库根）。网关会内联成 data URI 返回"
+          },
           "source": {
             "type": "object",
             "required": ["type", "repo"],

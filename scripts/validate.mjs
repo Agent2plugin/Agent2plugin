@@ -101,6 +101,15 @@ function checkIndex() {
       fail(`${where}：manifest 指向的文件不存在（${entry.manifest}）`)
       continue
     }
+    // 图标：写了就必须真的存在。网关按这个路径去 raw.githubusercontent.com
+    // 取图，写错的表现是「卡片上没有图标」—— 界面上不报错，很难反查到。
+    if (entry.icon !== undefined) {
+      if (typeof entry.icon !== 'string' || !entry.icon.startsWith('icons/')) {
+        fail(`${where}：icon 应形如 icons/<id>.png（实际 ${entry.icon}）`)
+      } else if (!existsSync(join(REPO_DIR, entry.icon))) {
+        fail(`${where}：icon 指向的文件不存在（${entry.icon}）`)
+      }
+    }
     checkPluginFile(entry, entry.manifest)
   }
 }
