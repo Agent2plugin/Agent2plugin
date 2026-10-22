@@ -1,0 +1,14 @@
+# 统一换行符：仓库里一律 LF，不随各人的操作系统变。
+#
+# 为什么需要这一行：Windows 上 git 默认 `core.autocrlf=true`，检出时把 LF
+# 转成 CRLF、提交时再转回去。只要有一个环节没转干净（比如用别的编辑器或
+# 脚本写文件），diff 里就会出现「整文件都改了」的噪音 —— 实际只改了一行。
+# 这个仓库全是 JSON 与 JS，跨平台一致性比本地编辑器的习惯重要。
+* text=auto eol=lf
+
+# 二进制：明确标出来，避免 git 把它们当文本做换行转换（会把文件损坏）。
+*.png binary
+*.jpg binary
+*.webp binary
+*.zip binary
+*.exe binary

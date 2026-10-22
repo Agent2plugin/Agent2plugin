@@ -1,0 +1,9 @@
+# 编译产物
+target/
+**/target/
+
+# 打包产物（scripts/pack.mjs 产出）
+dist/
+
+# 签名私钥
+*.key.json

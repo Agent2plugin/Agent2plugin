@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Agent2plugin 索引",
+  "description": "网关读取的插件索引。schema 版本变化时同时改网关的读取逻辑。",
+  "type": "object",
+  "required": ["schema", "plugins"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "type": "integer",
+      "const": 1,
+      "description": "索引格式版本"
+    },
+    "updated": {
+      "type": "string",
+      "description": "最后更新日期（YYYY-MM-DD），给人看，网关不解析"
+    },
+    "plugins": {
+      "type": "array",
+      "description": "全部插件。id 必须全局唯一",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "manifest", "source"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]*$",
+            "description": "包 id：全局唯一，也是装好后的目录名"
+          },
+          "name": { "type": "string", "description": "显示名" },
+          "description": { "type": "string", "description": "一句话说明" },
+          "manifest": {
+            "type": "string",
+            "pattern": "^plugins/[a-z0-9][a-z0-9-]*\\.json$",
+            "description": "明细文件路径"
+          },
+          "source": {
+            "type": "object",
+            "required": ["type", "repo"],
+            "additionalProperties": false,
+            "properties": {
+              "type": { "type": "string", "enum": ["github-release"] },
+              "repo": {
+                "type": "string",
+                "pattern": "^[^/]+/[^/]+$",
+                "description": "owner/repo"
+              }
+            }
+          },
+          "official": {
+            "type": "boolean",
+            "description": "是否官方维护（界面上的徽标）"
+          },
+          "tags": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "分类标签"
+          }
+        }
+      }
+    }
+  }
+}
