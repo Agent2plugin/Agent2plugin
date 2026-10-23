@@ -9,7 +9,7 @@
       "icon": "icons/agent2api-providers.png",
       "source": {
         "type": "github-release",
-        "repo": "ProvidersPlugin/Agent2Providers"
+        "repo": "Agent2Builder/agent2api-providers-releases"
       },
       "manifest": "plugins/agent2api-providers.json",
       "official": true,
