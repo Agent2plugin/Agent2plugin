@@ -1,7 +1,7 @@
 {
   "id": "agent2api-providers",
   "name": "提供商增强",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "protocol": 1,
   "description": "各家提供商的转发、账号、签到与余额实现。装好之后这些提供商才会出现在「添加提供商」里。",
   "homepage": "https://github.com/ProvidersPlugin/Agent2Providers",
