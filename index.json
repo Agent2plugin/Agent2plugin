@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-10-23",
+  "updated": "2026-10-24",
   "plugins": [
     {
       "id": "agent2api-providers",
       "name": "提供商增强",
-      "description": "各家提供商的转发、账号、签到与余额实现。装好之后这些提供商才会出现在「添加提供商」里。",
+      "description": "为 Agent2API 扩展多家 AI 提供商，提供模型调用、账号登录与导入、凭证续期、模型目录、余额查询和签到等能力。具体功能以各提供商的支持情况为准。",
       "icon": "icons/agent2api-providers.png",
       "source": {
         "type": "github-release",
