@@ -1,7 +1,7 @@
 {
   "id": "agent2api-providers",
   "name": "提供商增强",
-  "version": "0.2.1",
+  "version": "3.3.0-beta.4",
   "protocol": 1,
   "description": "为 Agent2API 扩展多家 AI 提供商，提供模型调用、账号登录与导入、凭证续期、模型目录、余额查询和签到等能力。具体功能以各提供商的支持情况为准。",
   "homepage": "https://github.com/ProvidersPlugin/Agent2Providers",
@@ -29,7 +29,6 @@
     { "id": "lobsterai", "label": "LobsterAI", "order": 6, "default_enabled": true },
     { "id": "raccoon", "label": "小浣熊", "order": 7, "default_enabled": true },
     { "id": "atomcode", "label": "AtomCode", "order": 8, "default_enabled": true },
-    { "id": "chatglm", "label": "智谱清言", "order": 9, "default_enabled": true },
     { "id": "autoclaw", "label": "AutoClaw 国内版", "order": 10, "default_enabled": true },
     { "id": "autoclaw-intl", "label": "AutoClaw 国际版", "order": 11, "default_enabled": true },
     { "id": "officeace", "label": "OfficeAce 果办", "order": 12, "default_enabled": true },

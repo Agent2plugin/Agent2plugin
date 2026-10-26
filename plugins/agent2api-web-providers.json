@@ -1,7 +1,7 @@
 {
   "id": "agent2api-web-providers",
   "name": "网页提供商",
-  "version": "0.1.0",
+  "version": "3.3.0-beta.4",
   "protocol": 1,
   "description": "为 Agent2API 扩展网页提供商，支持智谱清言的模型调用、访客与登录账号、凭证续期、模型目录、积分查询、签到和任务领取。",
   "homepage": "https://github.com/ProvidersPlugin/Agent2WebProviders",
