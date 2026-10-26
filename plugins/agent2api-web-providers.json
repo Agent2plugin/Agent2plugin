@@ -8,8 +8,8 @@
   "license": "AGPL-3.0",
   "official": true,
   "release": {
-    "repo": "ProvidersPlugin/Agent2WebProviders",
-    "tag": "v{version}",
+    "repo": "Agent2Builder/agent2api-providers-releases",
+    "tag": "web-v{version}",
     "asset": "{id}-{version}-{target}.zip"
   },
   "platforms": [

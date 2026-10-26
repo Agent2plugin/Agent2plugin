@@ -22,7 +22,7 @@
       "icon": "icons/agent2api-web-providers.png",
       "source": {
         "type": "github-release",
-        "repo": "ProvidersPlugin/Agent2WebProviders"
+        "repo": "Agent2Builder/agent2api-providers-releases"
       },
       "manifest": "plugins/agent2api-web-providers.json",
       "official": true,
