@@ -1,0 +1,25 @@
+{
+  "id": "agent2api-web-providers",
+  "name": "网页提供商",
+  "version": "0.1.0",
+  "protocol": 1,
+  "description": "为 Agent2API 扩展网页提供商，支持智谱清言的模型调用、访客与登录账号、凭证续期、模型目录、积分查询、签到和任务领取。",
+  "homepage": "https://github.com/ProvidersPlugin/Agent2WebProviders",
+  "license": "AGPL-3.0",
+  "official": true,
+  "release": {
+    "repo": "ProvidersPlugin/Agent2WebProviders",
+    "tag": "v{version}",
+    "asset": "{id}-{version}-{target}.zip"
+  },
+  "platforms": [
+    "x86_64-pc-windows-msvc",
+    "x86_64-apple-darwin",
+    "aarch64-apple-darwin",
+    "x86_64-unknown-linux-gnu",
+    "aarch64-unknown-linux-gnu"
+  ],
+  "providers": [
+    { "id": "chatglm", "label": "智谱清言", "order": 0, "default_enabled": true }
+  ]
+}

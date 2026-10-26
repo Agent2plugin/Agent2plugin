@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-10-24",
+  "updated": "2026-10-26",
   "plugins": [
     {
       "id": "agent2api-providers",
@@ -14,6 +14,19 @@
       "manifest": "plugins/agent2api-providers.json",
       "official": true,
       "tags": ["official", "providers"]
+    },
+    {
+      "id": "agent2api-web-providers",
+      "name": "网页提供商",
+      "description": "为 Agent2API 扩展网页提供商，支持智谱清言的模型调用、访客与登录账号、凭证续期、模型目录、积分查询、签到和任务领取。",
+      "icon": "icons/agent2api-web-providers.png",
+      "source": {
+        "type": "github-release",
+        "repo": "ProvidersPlugin/Agent2WebProviders"
+      },
+      "manifest": "plugins/agent2api-web-providers.json",
+      "official": true,
+      "tags": ["official", "providers", "web"]
     }
   ]
 }
