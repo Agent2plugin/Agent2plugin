@@ -6,9 +6,9 @@
 
 | 插件 | 功能 |
 |---|---|
-| [提供商增强](plugins/agent2api-providers.json) | 30 家提供商的转发、账号、签到与余额实现。 |
-| [网页提供商](plugins/agent2api-web-providers.json) | 智谱清言的转发、访客与登录账号、凭证续期、模型目录、积分查询、签到和任务领取。 |
-| [示例插件](plugins/agent2plugin-demo.json) | 一个能编译、能安装、能运行的最小插件，也是写自己插件的模板。 |
+| [提供商增强](plugins/agent2api-providers.json) | 多家 AI 提供商的转发、账号、签到与余额实现，包含豆包工作；具体功能以各家支持情况为准。 |
+| [网页提供商](plugins/agent2api-web-providers.json) | 智谱清言与 DeepSeek 网页账号的模型调用；具体续期、目录、积分与签到能力以各提供商声明为准。 |
+| [示例插件](examples/demo-plugin) | 一个能编译、能安装、能运行的最小插件，也是写自己插件的模板。 |
 
 ## 文档
 

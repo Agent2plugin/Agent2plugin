@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-10-26",
+  "updated": "2026-10-31",
   "plugins": [
     {
       "id": "agent2api-providers",
@@ -18,7 +18,7 @@
     {
       "id": "agent2api-web-providers",
       "name": "网页提供商",
-      "description": "为 Agent2API 扩展网页提供商，支持智谱清言的模型调用、访客与登录账号、凭证续期、模型目录、积分查询、签到和任务领取。",
+      "description": "为 Agent2API 扩展网页提供商，支持智谱清言与 DeepSeek 网页登录账号的模型调用；具体续期、目录、积分与签到能力以各提供商声明为准。",
       "icon": "icons/agent2api-web-providers.png",
       "source": {
         "type": "github-release",

@@ -1,9 +1,9 @@
 {
   "id": "agent2api-web-providers",
   "name": "网页提供商",
-  "version": "3.3.0-beta.4",
+  "version": "3.3.0-beta.6",
   "protocol": 1,
-  "description": "为 Agent2API 扩展网页提供商，支持智谱清言的模型调用、访客与登录账号、凭证续期、模型目录、积分查询、签到和任务领取。",
+  "description": "为 Agent2API 扩展网页提供商，支持智谱清言与 DeepSeek 网页登录账号的模型调用；具体续期、目录、积分与签到能力以各提供商声明为准。",
   "homepage": "https://github.com/ProvidersPlugin/Agent2WebProviders",
   "license": "AGPL-3.0",
   "official": true,
@@ -20,6 +20,7 @@
     "aarch64-unknown-linux-gnu"
   ],
   "providers": [
-    { "id": "chatglm", "label": "智谱清言", "order": 0, "default_enabled": true }
+    { "id": "chatglm", "label": "智谱清言", "order": 0, "default_enabled": true },
+    { "id": "deepseek-web", "label": "DeepSeek 网页", "order": 1, "default_enabled": true }
   ]
 }
