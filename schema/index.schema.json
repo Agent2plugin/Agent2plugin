@@ -53,10 +53,6 @@
               }
             }
           },
-          "official": {
-            "type": "boolean",
-            "description": "是否官方维护（界面上的徽标）"
-          },
           "tags": {
             "type": "array",
             "items": { "type": "string" },

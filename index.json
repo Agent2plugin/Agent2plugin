@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-04",
+  "updated": "2026-11-09",
   "plugins": [
     {
       "id": "agent2api-providers",
@@ -12,8 +12,7 @@
         "repo": "Agent2Builder/agent2api-providers-releases"
       },
       "manifest": "plugins/agent2api-providers.json",
-      "official": true,
-      "tags": ["official", "providers"]
+      "tags": ["community", "providers"]
     },
     {
       "id": "agent2api-web-providers",
@@ -25,8 +24,19 @@
         "repo": "Agent2Builder/agent2api-providers-releases"
       },
       "manifest": "plugins/agent2api-web-providers.json",
-      "official": true,
-      "tags": ["official", "providers", "web"]
+      "tags": ["community", "providers", "web"]
+    },
+    {
+      "id": "agent2api-wasm-atomcode",
+      "name": "AtomCode · Wasm",
+      "description": "独立的 AtomCode 提供商，支持网页登录、凭证续期、对话、模型目录、额度查询和按需领取套餐。",
+      "icon": "icons/agent2api-wasm-atomcode.png",
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-atomcode.json",
+      "tags": ["community", "providers", "wasm"]
     }
   ]
 }

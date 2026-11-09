@@ -25,7 +25,6 @@
     "description": { "type": "string" },
     "homepage": { "type": "string", "description": "项目主页" },
     "license": { "type": "string", "description": "SPDX 标识" },
-    "official": { "type": "boolean" },
     "release": {
       "type": "object",
       "required": ["repo", "tag", "asset"],
@@ -56,10 +55,11 @@
           "x86_64-apple-darwin",
           "aarch64-apple-darwin",
           "x86_64-unknown-linux-gnu",
-          "aarch64-unknown-linux-gnu"
+          "aarch64-unknown-linux-gnu",
+          "wasm32-unknown-unknown"
         ]
       },
-      "description": "这个包提供了哪些平台的二进制"
+      "description": "原生插件的目标平台，或适用于所有网关平台的 WASM 入口"
     },
     "providers": {
       "type": "array",

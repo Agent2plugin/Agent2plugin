@@ -3,7 +3,7 @@
 [English](index-format.md) · **简体中文**
 
 描述一个插件需要两份文件：`index.json` 列出有哪些，`plugins/<id>.json`
-承载某一家的明细。
+承载某一家的明细。索引中的所有插件均为社区插件，不再区分官方插件。
 
 ## index.json
 
@@ -22,8 +22,7 @@
       "description": "各家提供商的转发、账号、签到与余额实现。",
       "source": { "type": "github-release", "repo": "ProvidersPlugin/Agent2Providers" },
       "manifest": "plugins/agent2api-providers.json",
-      "official": true,
-      "tags": ["official", "providers"]
+      "tags": ["community", "providers"]
     }
   ]
 }
@@ -38,7 +37,7 @@
 | `plugins[].description` | 一句话说明，显示在插件列表里 |
 | `plugins[].manifest` | 明细文件路径，必须形如 `plugins/<id>.json` |
 | `plugins[].source` | 包从哪来。当前只支持 `github-release` |
-| `plugins[].official` | 是否官方维护，界面上的徽标 |
+| `plugins[].tags` | 可选的分类标签 |
 
 ## plugins/\<id\>.json
 
@@ -52,7 +51,6 @@
   "protocol": 1,
   "homepage": "https://github.com/ProvidersPlugin/Agent2Providers",
   "license": "AGPL-3.0",
-  "official": true,
   "release": {
     "repo": "ProvidersPlugin/Agent2Providers",
     "tag": "v{version}",

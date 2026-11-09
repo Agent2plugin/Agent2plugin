@@ -3,7 +3,8 @@
 **English** · [简体中文](index-format.zh-CN.md)
 
 Two files describe a plugin: `index.json` lists what exists, and
-`plugins/<id>.json` carries the detail for one plugin.
+`plugins/<id>.json` carries the detail for one plugin. All plugins in this index
+are community plugins; there is no official classification.
 
 ## index.json
 
@@ -23,8 +24,7 @@ when needed.
       "description": "Forwarding, accounts, check-in and balance for each provider.",
       "source": { "type": "github-release", "repo": "ProvidersPlugin/Agent2Providers" },
       "manifest": "plugins/agent2api-providers.json",
-      "official": true,
-      "tags": ["official", "providers"]
+      "tags": ["community", "providers"]
     }
   ]
 }
@@ -39,7 +39,7 @@ when needed.
 | `plugins[].description` | One line, shown in the plugin list |
 | `plugins[].manifest` | Detail file path, must be `plugins/<id>.json` |
 | `plugins[].source` | Where the package comes from. Currently only `github-release` |
-| `plugins[].official` | Maintained by us, shown as a badge |
+| `plugins[].tags` | Optional category tags |
 
 ## plugins/\<id\>.json
 
@@ -53,7 +53,6 @@ One file per plugin. The gateway builds the download URL from it.
   "protocol": 1,
   "homepage": "https://github.com/ProvidersPlugin/Agent2Providers",
   "license": "AGPL-3.0",
-  "official": true,
   "release": {
     "repo": "ProvidersPlugin/Agent2Providers",
     "tag": "v{version}",

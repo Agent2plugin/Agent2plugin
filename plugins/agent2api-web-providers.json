@@ -6,7 +6,6 @@
   "description": "为 Agent2API 扩展网页提供商，支持智谱清言、DeepSeek 网页与 Tabbit 登录账号的模型调用；具体续期、目录、积分与签到能力以各提供商声明为准。",
   "homepage": "https://github.com/ProvidersPlugin/Agent2WebProviders",
   "license": "AGPL-3.0",
-  "official": true,
   "release": {
     "repo": "Agent2Builder/agent2api-providers-releases",
     "tag": "web-v{version}",
