@@ -1,7 +1,7 @@
 {
   "id": "agent2api-web-providers",
   "name": "网页提供商",
-  "version": "3.4.2",
+  "version": "3.5.0-beta.1",
   "protocol": 1,
   "description": "为 Agent2API 扩展网页提供商，支持智谱清言、DeepSeek 网页与 Tabbit 登录账号的模型调用；具体续期、目录、积分与签到能力以各提供商声明为准。",
   "homepage": "https://github.com/ProvidersPlugin/Agent2WebProviders",
