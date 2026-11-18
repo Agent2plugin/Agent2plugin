@@ -1,0 +1,27 @@
+{
+  "id": "agent2api-wasm-orcaterm",
+  "name": "OrcaTerm",
+  "version": "0.1.0-beta.1",
+  "protocol": 1,
+  "description": "独立的 OrcaTerm 提供商，支持微信授权、凭据文本与只读本机导入、自动续期、动态客户端模型目录、图文对话及额度查询；工具由网关文本模拟并交给原客户端执行。",
+  "homepage": "https://github.com/ProvidersPlugin/Agent2Providers/tree/beta/wasm/orcaterm",
+  "license": "AGPL-3.0-only",
+  "requireSigned": true,
+  "verified": false,
+  "release": {
+    "repo": "Agent2Builder/agent2api-providers-releases",
+    "tag": "wasm-orcaterm-v{version}",
+    "asset": "{id}-{version}-{target}.zip"
+  },
+  "platforms": [
+    "wasm32-unknown-unknown"
+  ],
+  "providers": [
+    {
+      "id": "orcaterm",
+      "label": "OrcaTerm",
+      "order": 4,
+      "default_enabled": true
+    }
+  ]
+}

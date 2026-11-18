@@ -1,0 +1,27 @@
+{
+  "id": "agent2api-wasm-tabbit",
+  "name": "Tabbit 国内版",
+  "version": "0.1.0-beta.1",
+  "protocol": 1,
+  "description": "独立的 Tabbit 国内版网页提供商，支持手机验证码登录、Cookie / JWT 导入、流式文本对话、在线模型目录、百分比额度和每日签到。",
+  "homepage": "https://github.com/ProvidersPlugin/Agent2WebProviders/tree/beta/wasm/tabbit",
+  "license": "AGPL-3.0-only",
+  "requireSigned": true,
+  "verified": false,
+  "release": {
+    "repo": "Agent2Builder/agent2api-providers-releases",
+    "tag": "wasm-tabbit-v{version}",
+    "asset": "{id}-{version}-{target}.zip"
+  },
+  "platforms": [
+    "wasm32-unknown-unknown"
+  ],
+  "providers": [
+    {
+      "id": "tabbit",
+      "label": "Tabbit 国内版",
+      "order": 2,
+      "default_enabled": true
+    }
+  ]
+}

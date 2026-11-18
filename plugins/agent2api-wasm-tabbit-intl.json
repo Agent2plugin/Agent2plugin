@@ -1,0 +1,27 @@
+{
+  "id": "agent2api-wasm-tabbit-intl",
+  "name": "Tabbit 国际版",
+  "version": "0.1.0-beta.1",
+  "protocol": 1,
+  "description": "独立的 Tabbit 国际版网页提供商，支持导入本人 Cookie / JWT / 凭据 JSON、流式文本对话、账号独立在线模型目录、百分比额度和每日签到；客户端工具由网关提供可关闭的模拟。",
+  "homepage": "https://github.com/ProvidersPlugin/Agent2WebProviders/tree/beta/wasm/tabbit-intl",
+  "license": "AGPL-3.0-only",
+  "requireSigned": true,
+  "verified": false,
+  "release": {
+    "repo": "Agent2Builder/agent2api-providers-releases",
+    "tag": "wasm-tabbit-intl-v{version}",
+    "asset": "{id}-{version}-{target}.zip"
+  },
+  "platforms": [
+    "wasm32-unknown-unknown"
+  ],
+  "providers": [
+    {
+      "id": "tabbit-intl",
+      "label": "Tabbit 国际版",
+      "order": 3,
+      "default_enabled": true
+    }
+  ]
+}

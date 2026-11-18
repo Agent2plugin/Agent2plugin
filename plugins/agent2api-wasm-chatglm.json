@@ -1,0 +1,27 @@
+{
+  "id": "agent2api-wasm-chatglm",
+  "name": "智谱清言",
+  "version": "0.1.0-beta.1",
+  "protocol": 1,
+  "description": "独立的智谱清言网页提供商，支持显式访客、令牌导入、自动续期、流式对话、模型目录与登录账号积分和签到任务。",
+  "homepage": "https://github.com/ProvidersPlugin/Agent2WebProviders/tree/beta/wasm/chatglm",
+  "license": "AGPL-3.0-only",
+  "requireSigned": true,
+  "verified": false,
+  "release": {
+    "repo": "Agent2Builder/agent2api-providers-releases",
+    "tag": "wasm-chatglm-v{version}",
+    "asset": "{id}-{version}-{target}.zip"
+  },
+  "platforms": [
+    "wasm32-unknown-unknown"
+  ],
+  "providers": [
+    {
+      "id": "chatglm",
+      "label": "智谱清言",
+      "order": 0,
+      "default_enabled": true
+    }
+  ]
+}

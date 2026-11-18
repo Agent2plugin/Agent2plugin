@@ -1,0 +1,27 @@
+{
+  "id": "agent2api-wasm-commandcode",
+  "name": "Command Code",
+  "version": "0.1.0-beta.1",
+  "protocol": 1,
+  "description": "独立的 Command Code 提供商，支持 API Key、JSON 文本与固定本机快照导入、流式对话、工具与思考内容、公共模型目录和只读额度查询；当前均未做真实账号验收。",
+  "homepage": "https://github.com/ProvidersPlugin/Agent2Providers/tree/beta/wasm/commandcode",
+  "license": "AGPL-3.0-only",
+  "requireSigned": true,
+  "verified": false,
+  "release": {
+    "repo": "Agent2Builder/agent2api-providers-releases",
+    "tag": "wasm-commandcode-v{version}",
+    "asset": "{id}-{version}-{target}.zip"
+  },
+  "platforms": [
+    "wasm32-unknown-unknown"
+  ],
+  "providers": [
+    {
+      "id": "commandcode",
+      "label": "Command Code",
+      "order": 1,
+      "default_enabled": true
+    }
+  ]
+}

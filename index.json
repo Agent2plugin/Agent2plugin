@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-09",
+  "updated": "2026-11-18",
   "plugins": [
     {
       "id": "agent2api-providers",
@@ -12,7 +12,10 @@
         "repo": "Agent2Builder/agent2api-providers-releases"
       },
       "manifest": "plugins/agent2api-providers.json",
-      "tags": ["community", "providers"]
+      "tags": [
+        "community",
+        "providers"
+      ]
     },
     {
       "id": "agent2api-web-providers",
@@ -24,19 +27,735 @@
         "repo": "Agent2Builder/agent2api-providers-releases"
       },
       "manifest": "plugins/agent2api-web-providers.json",
-      "tags": ["community", "providers", "web"]
+      "tags": [
+        "community",
+        "providers",
+        "web"
+      ]
     },
     {
       "id": "agent2api-wasm-atomcode",
-      "name": "AtomCode · Wasm",
+      "name": "AtomCode",
       "description": "独立的 AtomCode 提供商，支持网页登录、凭证续期、对话、模型目录、额度查询和按需领取套餐。",
       "icon": "icons/agent2api-wasm-atomcode.png",
+      "category": "agent",
+      "requireSigned": true,
       "source": {
         "type": "github-release",
         "repo": "Agent2Builder/agent2api-providers-releases"
       },
       "manifest": "plugins/agent2api-wasm-atomcode.json",
-      "tags": ["community", "providers", "wasm"]
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-accio",
+      "name": "Accio 国际版",
+      "description": "独立的 Accio 国际版提供商，保留 PKCE 网页登录、手工凭证、自动续期、ADK 对话、工具与图片输入、模型目录和用量查询。",
+      "icon": "icons/agent2api-wasm-accio.png",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-accio.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-accio-cn",
+      "name": "Accio 国内版",
+      "description": "独立的 Accio 国内版提供商，使用国内登录站与 CN 账号目录，保留 PKCE 授权、自动续期、ADK 对话、工具、图片输入和双额度查询。",
+      "icon": "icons/agent2api-wasm-accio-cn.png",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-accio-cn.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-antigravity",
+      "name": "Antigravity",
+      "description": "独立 Antigravity 提供商，保留 Google OAuth、凭据续期、账号模型目录与额度窗口、Gemini 信封对话及图片生成编辑；本地开发包尚未实测，历史参考授权待核验。",
+      "icon": "icons/agent2api-wasm-antigravity.png",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-antigravity.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-astudio",
+      "name": "AStudio",
+      "description": "独立 AStudio 提供商，支持本机登录态导入、短信与密码登录、极验、凭据导入、Responses 对话、账号模型目录、积分和每日登录奖励；本机固定只读，无需额外辅助插件授权，不提供自动续期。",
+      "icon": "icons/agent2api-wasm-astudio.png",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-astudio.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-autoclaw",
+      "name": "AutoClaw 国内版",
+      "description": "独立 AutoClaw 国内版，包含手机验证码登录、凭据导入与续期、实时模型目录、对话、积分和每日签到；本机引用经独立授权后续期并安全写回，另有显式旧环境凭据导入入口，未经真实账号验收。",
+      "icon": "icons/agent2api-wasm-autoclaw.png",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-autoclaw.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-autoclaw-intl",
+      "name": "AutoClaw 国际版",
+      "description": "独立 AutoClaw 国际版，包含 Google / Zai 官方授权、凭据导入与续期、实时模型目录、对话、订阅、积分和签到。本机引用经独立授权后续期并安全写回，另有显式旧环境凭据导入入口，未经真实账号验收。",
+      "icon": "icons/agent2api-wasm-autoclaw-intl.png",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-autoclaw-intl.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-catpaw",
+      "name": "CatPaw",
+      "description": "对话与跨请求工具续接、图片输入及有界压缩、官方网页登录、明确导入后的本机实时关联、账号隔离的模型目录与积分查询。本机令牌不保存为快照；尚未进行真实账号验收。",
+      "icon": "icons/agent2api-wasm-catpaw.png",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-catpaw.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-cline-free",
+      "name": "Cline 免费池",
+      "description": "独立 Cline 免费池，包含设备授权、凭据导入、模型目录、对话和 credit 查询。普通账号经显式确认后由主程序单次续期；旧账号可更新原凭据后授权。本机引用另行授权后续期并安全写回，不读取或配对 Pass，未经真实账号验收。",
+      "icon": "icons/agent2api-wasm-cline-free.png",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-cline-free.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-cline-pass",
+      "name": "Cline 订阅池",
+      "description": "独立 Cline 订阅池，包含设备授权、API Key、凭据导入、自动续期、模型目录、对话、credit 和订阅窗口查询；推荐位可能额外消耗 credit。本机引用经独立授权后续期并安全写回，未经真实账号验收。",
+      "icon": "icons/agent2api-wasm-cline-pass.png",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-cline-pass.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-codar",
+      "name": "科搭 Codar",
+      "description": "独立科搭 Codar 提供商：微信扫码、手机验证码、访问令牌和凭据 JSON 导入、经授权的本机登录态关联、在线模型目录、流式对话与工具调用、令牌续期、积分查询、每日签到、免费模型活动和生图。未做真实账号验收；遵守上游客户端限制，不改写身份提示词。",
+      "icon": "icons/agent2api-wasm-codar.png",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-codar.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-codearts",
+      "name": "CodeArts",
+      "description": "完整对话与会话心跳、官方网页登录和受控自动续期、账号隔离模型目录、余额、每日福利及新手礼。领取结果回读确认，一次性材料结果不明不重发；尚未进行真实账号验收。",
+      "icon": "icons/agent2api-wasm-codearts.png",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-codearts.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-commandcode",
+      "name": "Command Code",
+      "description": "独立的 Command Code 提供商，支持 API Key、JSON 文本与固定本机快照导入、流式对话、工具与思考内容、公共模型目录和只读额度查询；当前均未做真实账号验收。",
+      "icon": "icons/agent2api-wasm-commandcode.png",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-commandcode.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-doubaowork",
+      "name": "豆包工作",
+      "description": "对话、异步回答、思考、客户端工具桥、图片上传与生图、官方网页登录和授权本机快照导入、模型目录、额度、每日签到及已完成任务领奖。取消只处理本次回执；尚未进行真实账号验收。",
+      "icon": "icons/agent2api-wasm-doubaowork.png",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-doubaowork.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-dumate",
+      "name": "百度搭子 DuMate",
+      "description": "独立百度搭子提供商：桌面官方窗口登录、Cookie / JSON 和固定客户端快照导入、流式对话、原生工具调用、图片输入、短期模型令牌续期、积分查询、每日签到和文生图。使用参考模型清单，未做真实账号验收；不自动抽奖或代做任务。",
+      "icon": "icons/agent2api-wasm-dumate.png",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-dumate.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-kiro",
+      "name": "Kiro",
+      "description": "独立 Kiro 提供商，包含双阶段托管网页登录、AWS 企业认证地区、API key、社交与外部身份凭据续期、账号模型目录、额度、AWS 二进制流对话和网页搜索。本机 IDE / CLI 引用经独立授权后续期并安全写回；未经真实账号验收。",
+      "icon": "icons/agent2api-wasm-kiro.svg",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-kiro.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-kuku",
+      "name": "KukuAI 库库",
+      "description": "独立库库提供商，包含桌面网页登录 Cookie 回收、本机客户端快照、凭据及用户选定的 Cookie SQLite 数据库导入、产品 STOKEN 换发、会话式对话、在线目录、积分、30 天签到和已完成每日任务领奖；加密-only 数据库仍需对应本机解密材料，未经真实账号验收。",
+      "icon": "icons/agent2api-wasm-kuku.png",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-kuku.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-lobsterai",
+      "name": "LobsterAI",
+      "description": "独立的有道龙虾提供商，支持浏览器登录与凭证导入、自动续期、对话、模型目录、积分查询和每日签到。",
+      "icon": "icons/agent2api-wasm-lobsterai.png",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-lobsterai.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-loomy",
+      "name": "Loomy",
+      "description": "独立的 Loomy 提供商，支持短信、密码与本机登录快照导入、Chat 与 Messages 对话、账号模型目录、双钱包积分、每日登录积分、新手任务及图片生成和参考图编辑。",
+      "icon": "icons/agent2api-wasm-loomy.png",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-loomy.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-modelscope",
+      "name": "ModelScope 国内版",
+      "description": "独立的 ModelScope 国内版提供商，支持令牌导入、对话、账号模型目录、魔粒余额与流水、每日签到和异步图片生成及编辑。",
+      "icon": "icons/agent2api-wasm-modelscope.png",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-modelscope.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-modelscope-intl",
+      "name": "ModelScope 国际版",
+      "description": "独立的 ModelScope 国际版提供商，使用独立账号与目录，支持令牌导入、对话、魔粒余额与流水、每日签到和异步图片生成及编辑。",
+      "icon": "icons/agent2api-wasm-modelscope-intl.png",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-modelscope-intl.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-monkeycode",
+      "name": "MonkeyCode 国内版",
+      "description": "账号校验、独立模型目录、钱包、流水和订阅、受控远程对话与客户端工具桥、官方网页登录及每日签到。发送对话仅授权本次固定远端任务，无需额外权限设置；不购买或自动兑换，尚未进行真实账号验收。",
+      "icon": "icons/agent2api-wasm-monkeycode.png",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-monkeycode.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-monkeycode-intl",
+      "name": "MonkeyCode 国际版",
+      "description": "国际站独立账号、模型目录、钱包、流水和订阅、受控远程对话与客户端工具桥、官方网页登录及每日签到。发送对话仅授权本次固定国际任务，无需额外权限设置；尚未进行真实账号验收。",
+      "icon": "icons/agent2api-wasm-monkeycode-intl.png",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-monkeycode-intl.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-officeace",
+      "name": "OfficeAce 果办",
+      "description": "独立 OfficeAce 提供商，包含华为云授权登录、DPoP 凭据续期、对话、账号模型目录、积分、每日奖励和经确认的体验套餐。账号服务器访问需授权当前账号的固定官方来源与路由，沿用账号代理；新人奖励与每日签到共用结算，未经真实账号验收。",
+      "icon": "icons/agent2api-wasm-officeace.png",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-officeace.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-orcaterm",
+      "name": "OrcaTerm",
+      "description": "独立的 OrcaTerm 提供商，支持微信授权、凭据文本与只读本机导入、自动续期、动态客户端模型目录、图文对话及额度查询；工具由网关文本模拟并交给原客户端执行。",
+      "icon": "icons/agent2api-wasm-orcaterm.png",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-orcaterm.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-qoder",
+      "name": "Qoder 中国版",
+      "description": "独立 Qoder 中国版提供商：设备授权、PAT 与 JSON 导入、续期、模型目录、COSY 对话、额度与活动领取；不包含国际版或千问办公。",
+      "icon": "icons/agent2api-wasm-qoder.png",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-qoder.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-qoder-intl",
+      "name": "Qoder 国际版",
+      "description": "独立 Qoder 国际版，包含设备授权、PAT 与 JSON 导入、续期、静态及在线目录、COSY 对话、额度、每日签到和活动；设备标识读取与官方 UMID 验证组件需独立授权，不绕过资格或设备限领，未经真实账号验收。",
+      "icon": "icons/agent2api-wasm-qoder-intl.png",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-qoder-intl.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-quwork",
+      "name": "QuWork",
+      "description": "独立 QuWork 提供商，包含对话、账号会话续期、公开模型目录、积分和奖励兑换。本机登录态经固定只读入口导入；兑换所需的原客户端设备标识须独立授权读取，不修改设备编号，未经真实账号验收。",
+      "icon": "icons/agent2api-wasm-quwork.png",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-quwork.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-qwenwork",
+      "name": "千问办公 国内版",
+      "description": "独立千问办公国内版，包含设备 PKCE、凭据 JSON、个人账号提前续期、账号模型目录、COSY 对话和积分查询；保留原设备编号，缺失时经授权读固定标识或仅生成一次 UUID。企业衍生登录态到期需更新完整凭据，不静默降级；未经真实账号验收。",
+      "icon": "icons/agent2api-wasm-qwenwork.svg",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-qwenwork.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-qwenwork-intl",
+      "name": "千问办公 国际版",
+      "description": "独立千问办公国际版，包含设备 PKCE、凭据 JSON、个人账号提前续期、账号模型目录、COSY 对话和额度查询；设备标识仅经授权读固定文件或生成一次 UUID。企业衍生登录态到期需更新完整凭据，不静默降级；国际兼容性未经真实账号验收。",
+      "icon": "icons/agent2api-wasm-qwenwork-intl.svg",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-qwenwork-intl.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-raccoon",
+      "name": "小浣熊 Raccoon",
+      "description": "独立小浣熊提供商，包含桌面应用内网页登录、凭据导入、旧令牌续期、对话、图片生成及编辑、模型目录、积分和登录奖励。本机实时引用经独立授权后可续期并安全写回；IAM 凭据仍须重新登录，另有显式旧环境凭据导入入口，未经真实账号验收。",
+      "icon": "icons/agent2api-wasm-raccoon.png",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-raccoon.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-trae",
+      "name": "Trae",
+      "description": "独立 Trae 国内版提供商，保留设备密钥、凭据续期、账号模型目录、自有流式对话、积分与签到；本机桌面托管授权自动接回，网页和手机可手工导入凭据。",
+      "icon": "icons/agent2api-wasm-trae.png",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-trae.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-workbuddy",
+      "name": "WorkBuddy 国内版",
+      "description": "独立的 WorkBuddy 国内版：网页登录、凭据快照导入、自动续期、模型目录、对话与图片、积分、签到和成长任务。旅行排程由主程序按账号执行；本机导入只读固定文件，不需额外授权，加密登录态请改用网页登录。",
+      "icon": "icons/agent2api-wasm-workbuddy.png",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-workbuddy.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-workbuddy-intl",
+      "name": "WorkBuddy 国际版",
+      "description": "WorkBuddy 国际版独立包：官方授权、登录快照、续期、目录、对话与图片、积分、搜索及每日活跃。保活只使用主程序授权的模型清单，不包含国内成长任务。",
+      "icon": "icons/agent2api-wasm-workbuddy-intl.png",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-workbuddy-intl.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-zcode",
+      "name": "ZCode 国内版",
+      "description": "独立的 ZCode 国内版提供商，支持网页登录、凭据导入、编码套餐与套餐池对话、账号模型目录、用量查询和赠送套餐领取。",
+      "icon": "icons/agent2api-wasm-zcode.png",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-zcode.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-zcode-intl",
+      "name": "ZCode 国际版",
+      "description": "独立的 ZCode 国际版提供商，支持 Z.AI 网页登录、海外密钥换取、凭据导入、编码套餐与套餐池对话、用量查询和赠送套餐领取。",
+      "icon": "icons/agent2api-wasm-zcode-intl.png",
+      "category": "agent",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-zcode-intl.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-chatglm",
+      "name": "智谱清言",
+      "description": "独立的智谱清言网页提供商，支持显式访客、令牌导入、自动续期、流式对话、模型目录与登录账号积分和签到任务。",
+      "icon": "icons/agent2api-wasm-chatglm.png",
+      "category": "web",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-chatglm.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm",
+        "web"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-deepseek-web",
+      "name": "DeepSeek 网页",
+      "description": "独立的 DeepSeek 网页提供商，保留网页令牌与桌面登录、模型目录、工作量证明、流式思考和受控图片上传。",
+      "icon": "icons/agent2api-wasm-deepseek-web.png",
+      "category": "web",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-deepseek-web.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm",
+        "web"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-tabbit",
+      "name": "Tabbit 国内版",
+      "description": "独立的 Tabbit 国内版网页提供商，支持手机验证码登录、Cookie / JWT 导入、流式文本对话、在线模型目录、百分比额度和每日签到。",
+      "icon": "icons/agent2api-wasm-tabbit.png",
+      "category": "web",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-tabbit.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm",
+        "web"
+      ]
+    },
+    {
+      "id": "agent2api-wasm-tabbit-intl",
+      "name": "Tabbit 国际版",
+      "description": "独立的 Tabbit 国际版网页提供商，支持导入本人 Cookie / JWT / 凭据 JSON、流式文本对话、账号独立在线模型目录、百分比额度和每日签到；客户端工具由网关提供可关闭的模拟。",
+      "icon": "icons/agent2api-wasm-tabbit-intl.png",
+      "category": "web",
+      "requireSigned": true,
+      "source": {
+        "type": "github-release",
+        "repo": "Agent2Builder/agent2api-providers-releases"
+      },
+      "manifest": "plugins/agent2api-wasm-tabbit-intl.json",
+      "tags": [
+        "community",
+        "providers",
+        "wasm",
+        "web"
+      ]
     }
   ]
 }

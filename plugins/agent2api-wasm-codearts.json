@@ -1,0 +1,27 @@
+{
+  "id": "agent2api-wasm-codearts",
+  "name": "CodeArts",
+  "version": "0.1.0-beta.1",
+  "protocol": 1,
+  "description": "完整对话与会话心跳、官方网页登录和受控自动续期、账号隔离模型目录、余额、每日福利及新手礼。领取结果回读确认，一次性材料结果不明不重发；尚未进行真实账号验收。",
+  "homepage": "https://github.com/ProvidersPlugin/Agent2Providers/tree/beta/wasm/codearts",
+  "license": "AGPL-3.0-only",
+  "requireSigned": true,
+  "verified": false,
+  "release": {
+    "repo": "Agent2Builder/agent2api-providers-releases",
+    "tag": "wasm-codearts-v{version}",
+    "asset": "{id}-{version}-{target}.zip"
+  },
+  "platforms": [
+    "wasm32-unknown-unknown"
+  ],
+  "providers": [
+    {
+      "id": "codearts",
+      "label": "CodeArts",
+      "order": 28,
+      "default_enabled": false
+    }
+  ]
+}

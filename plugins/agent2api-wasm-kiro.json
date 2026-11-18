@@ -1,0 +1,27 @@
+{
+  "id": "agent2api-wasm-kiro",
+  "name": "Kiro",
+  "version": "0.1.0-beta.1",
+  "protocol": 1,
+  "description": "独立 Kiro 提供商，包含双阶段托管网页登录、AWS 企业认证地区、API key、社交与外部身份凭据续期、账号模型目录、额度、AWS 二进制流对话和网页搜索。本机 IDE / CLI 引用经独立授权后续期并安全写回；未经真实账号验收。",
+  "homepage": "https://github.com/ProvidersPlugin/Agent2Providers/tree/beta/wasm/kiro",
+  "license": "AGPL-3.0-only",
+  "requireSigned": true,
+  "verified": false,
+  "release": {
+    "repo": "Agent2Builder/agent2api-providers-releases",
+    "tag": "wasm-kiro-v{version}",
+    "asset": "{id}-{version}-{target}.zip"
+  },
+  "platforms": [
+    "wasm32-unknown-unknown"
+  ],
+  "providers": [
+    {
+      "id": "kiro",
+      "label": "Kiro",
+      "order": 31,
+      "default_enabled": true
+    }
+  ]
+}
