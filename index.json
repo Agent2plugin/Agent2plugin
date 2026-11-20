@@ -180,7 +180,7 @@
     {
       "id": "agent2api-wasm-cline-free",
       "name": "Cline 免费池",
-      "description": "独立 Cline 免费池，包含设备授权、凭据导入、模型目录、对话和 credit 查询。普通账号经显式确认后由主程序单次续期；旧账号可更新原凭据后授权。本机引用另行授权后续期并安全写回，不读取或配对 Pass，未经真实账号验收。",
+      "description": "独立 Cline 免费池，包含设备授权、凭据导入、模型目录、对话和 credit 查询。支持常规刷新令牌续期与经授权的本机登录态刷新，未经真实账号验收。",
       "icon": "icons/agent2api-wasm-cline-free.png",
       "category": "agent",
       "requireSigned": true,
@@ -189,24 +189,6 @@
         "repo": "Agent2Builder/agent2api-providers-releases"
       },
       "manifest": "plugins/agent2api-wasm-cline-free.json",
-      "tags": [
-        "community",
-        "providers",
-        "wasm"
-      ]
-    },
-    {
-      "id": "agent2api-wasm-cline-pass",
-      "name": "Cline 订阅池",
-      "description": "独立 Cline 订阅池，包含设备授权、API Key、凭据导入、自动续期、模型目录、对话、credit 和订阅窗口查询；推荐位可能额外消耗 credit。本机引用经独立授权后续期并安全写回，未经真实账号验收。",
-      "icon": "icons/agent2api-wasm-cline-pass.png",
-      "category": "agent",
-      "requireSigned": true,
-      "source": {
-        "type": "github-release",
-        "repo": "Agent2Builder/agent2api-providers-releases"
-      },
-      "manifest": "plugins/agent2api-wasm-cline-pass.json",
       "tags": [
         "community",
         "providers",
