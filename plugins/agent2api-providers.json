@@ -36,7 +36,6 @@
     { "id": "workbuddy", "label": "WorkBuddy 国内版", "order": 15, "default_enabled": true },
     { "id": "workbuddy-intl", "label": "WorkBuddy 国际版", "order": 16, "default_enabled": true },
     { "id": "cline-free", "label": "Cline 免费池", "order": 17, "default_enabled": true },
-    { "id": "cline-pass", "label": "Cline 订阅池", "order": 18, "default_enabled": true },
     { "id": "kuku", "label": "KukuAI 库库", "order": 19, "default_enabled": true },
     { "id": "monkeycode", "label": "MonkeyCode 国内版", "order": 20, "default_enabled": true },
     { "id": "monkeycode-intl", "label": "MonkeyCode 国际版", "order": 21, "default_enabled": true },
